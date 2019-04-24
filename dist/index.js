@@ -40,7 +40,7 @@ function PDFInvoice(_ref) {
 
       var borderOffset = doc.currentLineHeight() + 70;
 
-      doc.fontSize(16).fillColor('#cccccc').text(moment().format('DD, MMMM, YYYY'), CONTENT_LEFT_PADDING, 50, {
+      doc.fontSize(16).fillColor('#cccccc').text(moment().format('DD MMMM YYYY'), CONTENT_LEFT_PADDING, 50, {
         align: 'right'
       }).fillColor('#333333');
 
@@ -70,7 +70,7 @@ function PDFInvoice(_ref) {
     genTableRow: function genTableRow() {
       items.map(function (item) {
         return Object.assign({}, item, {
-          amount: numeral(item.amount).format('0,00.00 euro')
+          amount: numeral(item.amount).format('0,00.00 euros')
         });
       }).forEach(function (item, itemIndex) {
         ['amount', 'name', 'description', 'quantity'].forEach(function (field, i) {
