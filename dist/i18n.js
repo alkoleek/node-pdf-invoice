@@ -10,5 +10,14 @@ module.exports = {
     description: 'Descrição',
     name: 'Nome',
     quantity: 'Quantidade'
+  },
+    fr_FR: {
+    createdAt: 'Crée le',
+    amount: 'Total',
+    chargeStatus: 'Status',
+    chargeFor: 'Raison',
+    description: 'Description',
+    name: 'Nom',
+    quantity: 'Quantité',
   }
 };
