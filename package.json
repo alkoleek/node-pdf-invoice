@@ -22,7 +22,7 @@
   "author": "Gabriel Rubens <https://twitter.com/_gabrielrubens>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Astrocoders/alkoleek/issues"
+    "url": "https://github.com/alkoleek/node-pdf-invoice/issues"
   },
   "homepage": "https://github.com/alkoleek/node-pdf-invoice#readme",
   "dependencies": {
