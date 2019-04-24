@@ -70,7 +70,7 @@ function PDFInvoice(_ref) {
     genTableRow: function genTableRow() {
       items.map(function (item) {
         return Object.assign({}, item, {
-          amount: numeral(item.amount).format('0,00.00 euros')
+          amount: numeral(item.amount).format('0,00.00')
         });
       }).forEach(function (item, itemIndex) {
         ['amount', 'name', 'description', 'quantity'].forEach(function (field, i) {
