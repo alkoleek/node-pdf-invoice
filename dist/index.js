@@ -61,6 +61,7 @@ function PDFInvoice(_ref) {
       doc.fontSize(TEXT_SIZE).text(translate.chargeFor, CONTENT_LEFT_PADDING, 400);
 
       doc.text(customer.name + ' <' + customer.email + '>');
+      doc.text(`Reversement total en euros : ${charge.amount}`)
     },
     genTableHeaders: function genTableHeaders() {
       ['amount', 'name', 'description', 'quantity'].forEach(function (text, i) {
