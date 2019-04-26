@@ -17,7 +17,7 @@ function PDFInvoice(_ref) {
   var charge = {
     createdAt: date.getDay() + '/' + date.getMonth() + '/' + date.getFullYear(),
     amount: items.reduce(function (acc, item) {
-      return acc + item.amount;
+      return acc + (item.amount * item.quantity);
     }, 0)
   };
   var doc = new pdfKit({ size: 'A4', margin: 50 });
