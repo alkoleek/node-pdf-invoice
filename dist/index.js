@@ -54,6 +54,10 @@ function PDFInvoice(_ref) {
       doc.text(company.address);
       doc.text(company.phone);
       doc.text(company.email);
+      doc.text(company.url);
+      doc.text(company.siret);
+      doc.text(company.ape);
+      doc.text(company.disclaimer);
 
       doc.fillColor('#333333');
     },
@@ -61,7 +65,7 @@ function PDFInvoice(_ref) {
       doc.fontSize(TEXT_SIZE).text(translate.chargeFor, CONTENT_LEFT_PADDING, 400);
 
       doc.text(customer.name + ' <' + customer.email + '>');
-      doc.text(`Reversement total en euros : ${charge.amount}`)
+      doc.text(`Paiement total en euros : ${charge.amount}`)
     },
     genTableHeaders: function genTableHeaders() {
       ['amount', 'name', 'description', 'quantity'].forEach(function (text, i) {
@@ -94,6 +98,7 @@ function PDFInvoice(_ref) {
       doc.end();
     },
 
+    
 
     get pdfkitDoc() {
       return doc;
