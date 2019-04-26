@@ -30,8 +30,8 @@ function PDFInvoice(_ref) {
   var divMaxWidth = 550;
   var table = {
     x: CONTENT_LEFT_PADDING,
-    y: 200,
-    inc: 150
+    y: 250,
+    inc: 200
   };
 
   return {
@@ -49,7 +49,7 @@ function PDFInvoice(_ref) {
     genFooter: function genFooter() {
       doc.fillColor('#cccccc');
 
-      doc.fontSize(12).text(company.name, CONTENT_LEFT_PADDING, 450);
+      doc.fontSize(12).text(company.name, CONTENT_LEFT_PADDING, 150);
 
       doc.text(company.address);
       doc.text(company.phone);
@@ -58,7 +58,7 @@ function PDFInvoice(_ref) {
       doc.fillColor('#333333');
     },
     genCustomerInfos: function genCustomerInfos() {
-      doc.fontSize(TEXT_SIZE).text(translate.chargeFor, CONTENT_LEFT_PADDING, 400);
+      doc.fontSize(TEXT_SIZE).text(translate.chargeFor, CONTENT_LEFT_PADDING, 100);
 
       doc.text(customer.name + ' <' + customer.email + '>');
     },
