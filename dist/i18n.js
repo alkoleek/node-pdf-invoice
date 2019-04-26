@@ -13,7 +13,7 @@ module.exports = {
   },
     fr_FR: {
     createdAt: 'Crée le',
-    amount: 'Total (€)',
+    amount: 'Prix (€)',
     chargeStatus: 'Status',
     chargeFor: 'Client :',
     description: 'Description',
